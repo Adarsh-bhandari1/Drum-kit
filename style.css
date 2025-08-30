@@ -1,19 +1,29 @@
 h1{
     text-align: center;
     font-size: 90px;
-    color: #f1f1f3;
+    color: #f900e8;
     text-shadow: 3px 0 rgb(236, 222, 236);
 }
 
-body{
-    background-image: url(./images.jpg);
+body::before{
+    content: "";
+    position: fixed;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-image: url(./pexels-joshsorenson-995301.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    filter: blur(10px);
 }
 
 footer{
+    margin-top: 300px;
     text-align: center;
-    color: bisque;
+    font-size: 30px;
+    color: blue;
 }
 
 .butnSet {
@@ -44,10 +54,6 @@ footer{
 
 .w{
     background-image: url(./images/tom1.png);
-    /* background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-blend-mode: normal;make the 'W' letter black */
 }
 
 .a{
