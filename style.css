@@ -13,7 +13,7 @@ body::before{
     left: 0;
     width: 100vw;
     height: 100vh;
-    background-image: url(./pexels-joshsorenson-995301.jpg);
+    background-image: url(./images/background-image.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     filter: blur(10px);
