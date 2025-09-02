@@ -42,7 +42,7 @@ footer{
   font-weight: 900;
   color: #015a78;
   text-shadow: 3px 0 #DBEDF3;
-  border-radius: 15px;
+  border-radius: 20px;
   display: inline-block;
   align-items: center;
   justify-content: center;
@@ -81,4 +81,26 @@ footer{
 .l{
     background-image: url(/images/snare.png);
 }
- 
+.tb{
+    background-image: url(./images/tom2.png);
+} 
+.btn-glow{
+    padding: 15px 20px;
+    background: linear-gradient(45deg , #015a78 , #f900e8);
+    border-radius: 30px;
+    cursor: pointer;
+    box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
+    transition: all  0.3s ease;
+}
+
+.btn-glow:active{
+    animation: pulseGlow 0.6s ease;
+}
+
+@keyframes pulseGlow{
+    0%{
+        transform: scale(1);
+        /* box-shadow: ; */
+
+    }
+}
