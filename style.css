@@ -77,7 +77,7 @@ footer {
 }
 
 .l {
-  background-image: url(/images/snare.png);
+  background-image: url(./images/snare.png);
 }
 .btn-glow {
   padding: 15px 20px;
