@@ -3,9 +3,25 @@ for (var i = 0; i < numberOfButtons; i++) {
   document.querySelectorAll(".drum")[i].addEventListener("click", handleClick);
 }
 
+document.addEventListener("keypress", function (event) {
+  var key = event.key.toUpperCase();
+  makesound(key);
+  makeanimation(key);
+});
+
 function handleClick() {
   var btn = this.innerHTML;
   makesound(btn);
+}
+
+function makeanimation(currentkey) {
+  var btn = document.querySelector("." + currentkey.toLowerCase());
+  if (btn) {
+    btn.style.animation = "pulseGlow 0.2s ease";
+    setTimeout(function () {
+      btn.style.animation = "";
+    }, 200);
+  }
 }
 
 function makesound(key) {
@@ -26,6 +42,21 @@ function makesound(key) {
     case "D":
       var inst4 = new Audio("./sounds/tom-4.mp3");
       inst4.play();
+      break;
+    case "J":
+      var inst5 = new Audio("./sounds/snare.mp3");
+      inst5.play();
+      break;
+    case "K":
+      var inst6 = new Audio("./sounds/crash.mp3");
+      inst6.play();
+      break;
+    case "L":
+      var inst7 = new Audio("./sounds/kick-bass.mp3");
+      inst7.play();
+      break;
+    default:
+      console.log(key);
       break;
   }
 }
